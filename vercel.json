@@ -1,9 +1,24 @@
 {
     "version": 2,
     "builds": [
-        {"src": "app.py", "use": "@vercel/python"}
+      {
+        "src": "app.py",
+        "use": "@vercel/python",
+        "config": {
+          "externalPackages": [
+            "numpy",
+            "pandas",
+            "scikit-learn",
+            "matplotlib"
+          ]
+        }
+      }
     ],
     "routes": [
-        {"src": "/(.*)", "dest": "app.py"}
+      {
+        "src": "/(.*)",
+        "dest": "app.py"
+      }
     ]
-}
+  }
+  
