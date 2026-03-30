@@ -7,7 +7,7 @@ from sklearn.preprocessing import LabelEncoder
 import pickle
 
 df = pd.read_csv("iris.csv")
-print(df.head(3))
+print(df.head(5))
 
 df.columns = ['sepal_length','sepal_width','petal_length','petal_width','species']
 print(df.head(3))
